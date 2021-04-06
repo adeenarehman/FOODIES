@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp"
+    android:layout_gravity="center"
+    >
+
+    <!--HEADER-->
+    <LinearLayout
+        android:id="@+id/header"
+        android:gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/header"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="250dp"
+        >
+
+        <!--HEADING-->
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Sign Up"
+            android:textAlignment="center"
+            android:textColor="#ff002a"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            />
+
+        <!--EDIT TEXT LAYOUT-->
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <EditText
+                android:id="@+id/f_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:hint="Enter Full Name"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                android:background="@drawable/edittext_underline"
+                android:layout_marginBottom="10dp"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:hint="Enter Email"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                android:layout_marginBottom="10dp"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:background="@drawable/edittext_underline"
+                />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:hint="Enter Password"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                android:layout_marginBottom="10dp"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:background="@drawable/edittext_underline"
+                />
+
+            <EditText
+                android:id="@+id/contact"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:hint="Enter Contact"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                android:layout_marginBottom="10dp"
+                android:drawableLeft="@drawable/ic_baseline_contacts_24"
+                android:background="@drawable/edittext_underline"
+                />
+        </LinearLayout>
+
+        <!--BUTTON LAYOUT-->
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <Button
+                android:id="@+id/enter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/button_round_corner"
+                android:text="Sign Up"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--FOOTER-->
+    <LinearLayout
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/footer"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
