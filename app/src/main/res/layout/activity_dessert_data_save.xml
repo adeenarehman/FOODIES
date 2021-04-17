@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#FFFFFF"
+    tools:context=".DessertDataSave"
+    >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/header">
+
+        </View>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insert Dessert"
+            android:textStyle="bold"
+            android:textSize="50dp"
+            android:fontFamily="cursive"
+            android:textColor="#ff002a"
+            android:layout_marginBottom="40dp"
+            />
+
+
+        <EditText
+            android:id="@+id/save_data_name"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:hint="Enter Item Name...."
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            android:background="@drawable/edittext_underline"
+            />
+
+        <EditText
+            android:id="@+id/save_data_description"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:hint="Enter Item Description...."
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            android:background="@drawable/edittext_underline"
+            />
+
+        <EditText
+            android:id="@+id/save_data_price"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:hint="Enter Item Price...."
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            android:background="@drawable/edittext_underline"
+            />
+
+        <Button
+            android:id="@+id/save_detail"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:background="@drawable/button_round_corner"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginBottom="30dp"
+            />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:text="Back"
+            android:background="@drawable/button_round_corner"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/footer">
+        </View>
+    </LinearLayout>
+
+</RelativeLayout>

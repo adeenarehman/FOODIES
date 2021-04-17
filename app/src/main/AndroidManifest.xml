@@ -9,7 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SignUp"></activity>
+        <activity android:name=".Login"/>
+        <activity android:name=".TraditionalDataSave" />
+        <activity android:name=".DessertDataSave" />
+        <activity android:name=".DrinksDataSave" />
+        <activity android:name=".FastFoodDataSave" />
+        <activity android:name=".AdminTraditionalFoods" />
+        <activity android:name=".AdminFastFood" />
+        <activity android:name=".AdminDrinks" />
+        <activity android:name=".AdminDesserts" />
+        <activity android:name=".AdminDashboard" />
+        <activity android:name=".UserDrinks" />
+        <activity android:name=".UserFastFood" />
+        <activity android:name=".UserTraditionalFoods" />
+        <activity android:name=".UserDesserts" />
+        <activity android:name=".UserDashboard" />
+        <activity android:name=".SignUp" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

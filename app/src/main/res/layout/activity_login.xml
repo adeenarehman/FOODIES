@@ -5,21 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    tools:context=".SignUp"
-    android:layout_gravity="center"
-    >
+    tools:context=".Login">
 
-    <!--HEADER-->
     <RelativeLayout
-        android:id="@+id/header"
         android:gravity="top"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:foregroundGravity="center"
+        >
+
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="170dp"
-            android:background="@drawable/header"/>
+            android:layout_height="180dp"
+            android:background="@drawable/header">
+
+        </View>
 
         <ImageView
             android:id="@+id/logo"
@@ -28,54 +29,42 @@
             android:layout_marginLeft="40dp"
             android:scaleType="fitXY"
             android:src="@drawable/logo" />
-
     </RelativeLayout>
 
+
+
+
     <LinearLayout
-        android:id="@+id/center"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="330dp"
         android:gravity="center"
         android:orientation="vertical"
-        android:layout_marginTop="170dp"
+        android:layout_marginTop="200dp"
         >
 
         <!--HEADING-->
         <TextView
             android:id="@+id/heading"
-            android:layout_width="300dp"
+            android:layout_width="360dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:text="Sign Up"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Login"
             android:fontFamily="cursive"
             android:textAlignment="center"
             android:textColor="#ff002a"
-            android:textSize="50dp"
+            android:textSize="60dp"
             android:textStyle="bold"
             />
 
         <!--EDIT TEXT LAYOUT-->
         <LinearLayout
             android:layout_width="320dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="vertical"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="20dp"
             >
-
-            <EditText
-                android:id="@+id/name"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:hint="Enter Full Name"
-                android:textColor="#000000"
-                android:textSize="18dp"
-                android:textStyle="normal"
-                android:background="@drawable/edittext_underline"
-                android:layout_marginBottom="10dp"
-                android:drawableLeft="@drawable/ic_baseline_person_24"
-                />
 
             <EditText
                 android:id="@+id/email"
@@ -86,9 +75,9 @@
                 android:textColor="#000000"
                 android:textSize="18dp"
                 android:textStyle="normal"
-                android:layout_marginBottom="10dp"
-                android:drawableLeft="@drawable/ic_baseline_email_24"
                 android:background="@drawable/edittext_underline"
+                android:layout_marginBottom="20dp"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
                 />
 
             <EditText
@@ -100,22 +89,9 @@
                 android:textColor="#000000"
                 android:textSize="18dp"
                 android:textStyle="normal"
-                android:layout_marginBottom="10dp"
                 android:drawableLeft="@drawable/ic_baseline_lock_24"
                 android:background="@drawable/edittext_underline"
-                />
 
-            <EditText
-                android:id="@+id/contact"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:hint="Enter Contact"
-                android:textColor="#000000"
-                android:textSize="18dp"
-                android:textStyle="normal"
-                android:drawableLeft="@drawable/ic_baseline_contacts_24"
-                android:background="@drawable/edittext_underline"
                 />
         </LinearLayout>
 
@@ -125,32 +101,33 @@
             android:layout_height="50dp"
             android:gravity="center"
             android:orientation="vertical"
-            android:layout_marginBottom="5dp"
+            android:layout_marginBottom="15dp"
             >
 
             <Button
-                android:id="@+id/signup_button"
+                android:id="@+id/login_button"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:background="@drawable/button_round_corner"
-                android:text="Sign Up"
+                android:text="Login"
                 android:textStyle="bold"
                 android:textColor="#FFFFFF"
                 android:textSize="20dp"
-
                 />
+
         </LinearLayout>
 
+        <!--SIGNUP LAYOUT-->
         <LinearLayout
             android:layout_width="360dp"
             android:layout_height="wrap_content"
             >
             <TextView
-                android:id="@+id/login_page"
+                android:id="@+id/signup_page"
                 android:layout_width="360dp"
                 android:layout_height="wrap_content"
-                android:text="Already have an account? Login"
+                android:text="Dont have an account? Sign Up"
                 android:textAlignment="center"
                 android:textColor="#000000"
                 android:textSize="18dp"
@@ -160,7 +137,6 @@
 
     </LinearLayout>
 
-
     <!--FOOTER-->
     <LinearLayout
         android:gravity="bottom"
@@ -168,9 +144,11 @@
         android:layout_height="match_parent">
 
         <View
+
             android:layout_width="match_parent"
             android:layout_height="170dp"
-            android:background="@drawable/footer"/>
+            android:background="@drawable/footer">
+        </View>
     </LinearLayout>
 
 
