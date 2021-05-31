@@ -189,7 +189,7 @@
     </GridLayout>
 
     <!--FOOTER-->
-    <LinearLayout
+    <RelativeLayout
         android:gravity="bottom"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -199,7 +199,21 @@
             android:layout_height="150dp"
             android:background="@drawable/footer">
         </View>
-    </LinearLayout>
+
+        <Button
+            android:id="@+id/logout_button"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="120dp"
+            android:layout_gravity="center"
+            android:background="@drawable/white_login_button"
+            android:text="Logout"
+            android:textStyle="bold"
+            android:textColor="#ff002a"
+            android:textSize="20dp"
+            />
+    </RelativeLayout>
 
 
 </RelativeLayout>

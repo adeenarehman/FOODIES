@@ -5,10 +5,12 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 public class UserDashboard extends AppCompatActivity {
 
     CardView desserts, juices, fast_food, traditional;
+    Button logout_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +21,15 @@ public class UserDashboard extends AppCompatActivity {
         juices = (CardView)findViewById(R.id.juices);
         fast_food = (CardView)findViewById(R.id.fast_food);
         traditional = (CardView)findViewById(R.id.traditional);
+        logout_button = (Button)findViewById(R.id.logout_button);
+
+        logout_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(UserDashboard.this, Login.class);
+                startActivity(intent);
+            }
+        });
 
         desserts.setOnClickListener(new View.OnClickListener() {
             @Override
